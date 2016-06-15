@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<Characters>
+  <Character name="Arian" displayname="Arian">
+    <Components>
+      <StatManagerComponent>
+        <RawStats HP="225" MP="31" SP="38" Str="31" Vit="25" Mg="28" Spr="26" Skl="32" Spd="36" Ev="55" MgEv="60" Acr="140" MgAcr="130" Luck="100"/>
+        <RawStatMultipliers HP="0.0" MP="0.0" SP="0/0" Str="0.0" Vit="0.0" Mg="0.0" Spr="0.0" Skl="0.0" Spd="0.0" Ev="0.0" MgEv="0.0" Acr="0.0" MgAcr="0.0" Luck="0.0" />
+        <StatLimits type="playerdefault"/>
+      </StatManagerComponent>
+    </Components>
+    
+  </Character>
+</Characters>

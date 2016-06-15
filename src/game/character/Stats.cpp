@@ -1,0 +1,95 @@
+#include "Stats.h"
+#include <boost/assign.hpp>
+
+namespace KHMP
+{
+	const std::array<Stat, VolateStatCount> VolatileStats = { { Stat::HP, Stat::MP, Stat::SP } };
+	const boost::unordered_map<Stat, std::string> StatNameLookup = boost::assign::map_list_of
+		(Stat::HP, "HP")
+		(Stat::MP, "MP")
+		(Stat::SP, "SP")
+		(Stat::Strength, "Strength")
+		(Stat::Vitality, "Vitality")
+		(Stat::Magic, "Magic")
+		(Stat::Spirit, "Spirit")
+		(Stat::Skill, "Skill")
+		(Stat::Speed, "Speed")
+		(Stat::Agility, "Agility")
+		(Stat::Evasion, "Evasion")
+		(Stat::MgEvasion, "MgEvasion")
+		(Stat::Accuracy, "Accuracy")
+		(Stat::Luck, "Luck");
+	const boost::unordered_map<std::string, Stat> NameStatLookup = boost::assign::map_list_of
+		("HP", Stat::HP)
+		("MP", Stat::MP)
+		("SP", Stat::SP)
+		("Strength", Stat::Strength)
+		("Str", Stat::Strength)
+		("Vitality", Stat::Vitality)
+		("Vit", Stat::Vitality)
+		("Magic", Stat::Magic)
+		("Mg", Stat::Magic)
+		("Spirit", Stat::Spirit)
+		("Spr", Stat::Spirit)
+		("Skill", Stat::Skill)
+		("Skl", Stat::Skill)
+		("Speed", Stat::Speed)
+		("Spd", Stat::Speed)
+		("Agility", Stat::Agility)
+		("Evasion", Stat::Evasion)
+		("Ev", Stat::Evasion)
+		("MgEvasion", Stat::MgEvasion)
+		("MgEv", Stat::MgEvasion)
+		("Accuracy", Stat::Accuracy)
+		("Acr", Stat::Accuracy)
+		("MgAcr", Stat::MgAccuracy)
+		("MgAccuracy", Stat::MgAccuracy)
+		("MagicAccuracy", Stat::MgAccuracy)
+		("Acr", Stat::Accuracy)
+		("Luck", Stat::Luck)
+		("Lck", Stat::Luck);
+
+	boost::unordered_map<Stat, boost::unordered_map<const unsigned int, const unsigned int> > DefaultStatLimits = boost::assign::map_list_of
+		(Stat::HP, boost::assign::map_list_of
+			(0, 9999)
+			(1, 25000)
+			(2, 99999))
+		(Stat::MP, boost::assign::map_list_of
+			(0, 9999)
+			(1, 25000)
+			(2, 99999))
+		(Stat::SP, boost::assign::map_list_of
+			(0, 9999)
+			(1, 25000)
+			(2, 99999))
+		(Stat::Strength, boost::assign::map_list_of
+			(0, 255)
+			(1, 999))
+		(Stat::Vitality, boost::assign::map_list_of
+			(0, 255)
+			(1, 999))
+		(Stat::Magic, boost::assign::map_list_of
+			(0, 255)
+			(1, 999))
+		(Stat::Spirit, boost::assign::map_list_of
+			(0, 255)
+			(1, 999))
+		(Stat::Skill, boost::assign::map_list_of
+			(0, 255)
+			(1, 999))
+		(Stat::Speed, boost::assign::map_list_of
+			(0, 255)
+			(1, 999))
+		(Stat::Evasion, boost::assign::map_list_of
+			(0, 255)
+			(1, 999))
+		(Stat::MgEvasion, boost::assign::map_list_of
+			(0, 255)
+			(1, 999))
+		(Stat::Accuracy, boost::assign::map_list_of
+			(0, 255)
+			(1, 999))
+		(Stat::MgAccuracy, boost::assign::map_list_of
+			(0, 255)
+			(1, 999));
+}

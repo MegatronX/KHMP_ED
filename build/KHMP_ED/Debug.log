@@ -1,0 +1,2 @@
+[2016-05-18 | 21:37:13] DEBUG MSG: Opened debug log file in file d:\khmp_ed\src\engine\engine.cpp func Engine::Engine line 25
+[2016-05-18 | 21:37:22] DEBUG MSG: Engine initialized. Game Resolution set to 1000x750 in file d:\khmp_ed\src\engine\engine.cpp func Engine::Engine line 62

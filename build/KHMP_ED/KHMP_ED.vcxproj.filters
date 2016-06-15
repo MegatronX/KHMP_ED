@@ -1,0 +1,815 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\engine">
+      <UniqueIdentifier>{5dcdee9c-9001-4f49-8d71-a958a0634db0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine">
+      <UniqueIdentifier>{a2afb935-5af5-4e64-ba47-e280b71c3398}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\delegates">
+      <UniqueIdentifier>{c1e5b22b-b74d-405f-8151-63f7ab2c3c16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\delegates">
+      <UniqueIdentifier>{ba19cc1f-7368-4aea-a247-47427d177fe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\events">
+      <UniqueIdentifier>{e9e862f7-cc5f-4642-a369-5fd3ea68f4e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\utilities">
+      <UniqueIdentifier>{e1b7d125-73a8-4c9e-a768-5bbc40c45e6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\events">
+      <UniqueIdentifier>{b04c9511-48a6-45ba-b9a9-44718787fddd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\time">
+      <UniqueIdentifier>{fd6f54c1-75a2-40b7-8624-efd94f9a8fa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\input">
+      <UniqueIdentifier>{379aa136-6b38-4a0c-b231-0b7a83b2e98c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\configuration">
+      <UniqueIdentifier>{7406c8d0-2562-47e8-b681-25ec4e1c596b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\input\files">
+      <UniqueIdentifier>{4eaa5075-b7d5-4a56-8645-feff0a638397}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\input\files\xml">
+      <UniqueIdentifier>{9db3e2cd-5ce4-405b-913e-510a69b84e3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\input">
+      <UniqueIdentifier>{f999f890-7936-4cd4-9804-746ed0632a94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\configuration">
+      <UniqueIdentifier>{b8a2c97a-2ac3-4076-b1b7-d661a2602c4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\time">
+      <UniqueIdentifier>{ef1b469a-6356-49d1-a948-b90acd49deb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\input\controls">
+      <UniqueIdentifier>{01ea4f19-c10c-4971-aaf8-0a6f06b4f8ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\input\files">
+      <UniqueIdentifier>{37a9d2bc-7737-47fe-87f4-cdfa1f8a70c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\input\files\xml">
+      <UniqueIdentifier>{0f8f67d2-5fca-481a-806b-c1621b8cd468}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\input\files\NewFilter1">
+      <UniqueIdentifier>{4b4ff55b-bf18-4bbc-9866-f11f6ed512a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\input\controls">
+      <UniqueIdentifier>{efe442f1-f993-4973-912e-fe76d705d1fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\events\eventtypes">
+      <UniqueIdentifier>{edef6df1-efe0-48f6-aee6-2b21429415ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\events\eventtypes">
+      <UniqueIdentifier>{552d9bda-a6c2-434c-8f61-e32739b48252}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\audio">
+      <UniqueIdentifier>{0d16da8c-1543-40a1-bae1-2b91ca4cbd7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\entity">
+      <UniqueIdentifier>{dfd27c2b-6982-4235-80f3-3792b0241891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\component">
+      <UniqueIdentifier>{db0cb404-02e4-48f0-8980-95b690be6924}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\component">
+      <UniqueIdentifier>{cf148bc7-1e24-4590-9c65-6670a4d8a06f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\NewFilter1">
+      <UniqueIdentifier>{40178e5f-df69-441c-9ed1-bc582ffd2ff4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\utilities">
+      <UniqueIdentifier>{e1bb8f0c-c88a-4455-8e26-cd6706d8552f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\audio">
+      <UniqueIdentifier>{6b860abb-8a15-490a-a300-f881a4df7cf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\entity">
+      <UniqueIdentifier>{bfc72c5c-3af5-4573-bc50-3dcf93c87513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game">
+      <UniqueIdentifier>{cd8100ce-04de-47e9-915d-3f5e38c5874e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\battle">
+      <UniqueIdentifier>{94d60d00-0f20-43a7-ab15-a96de9fe2a81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game">
+      <UniqueIdentifier>{fb513dec-2753-46d2-a3ce-c01399b74f15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\battle">
+      <UniqueIdentifier>{603a2078-8215-4bb7-aec1-cf41c2ab9ff3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\character">
+      <UniqueIdentifier>{a8cdef30-9606-4922-87e3-eb706a1c1932}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\events">
+      <UniqueIdentifier>{f9daf333-e135-4e95-aaf6-1d4a12e50b6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\NewFilter1">
+      <UniqueIdentifier>{bd6df0d5-43e6-4944-96c5-79d599ff9b4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\actions">
+      <UniqueIdentifier>{86dd8fde-c786-4670-acf4-72f1670358d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\character">
+      <UniqueIdentifier>{8776ab23-194f-45be-b237-b4b9ec8f28ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\abilites">
+      <UniqueIdentifier>{d032a842-a5a2-479a-b01b-6bf6d4cceb1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\statuseffects">
+      <UniqueIdentifier>{9c1390c1-ef6a-4825-92b7-d1ea125dbc70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\mapping">
+      <UniqueIdentifier>{2f9dfd06-82f1-4bea-acda-9b8afe155d18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\cutscenes">
+      <UniqueIdentifier>{f9eee507-c0e0-4835-823f-4003e2b539b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\io">
+      <UniqueIdentifier>{14e84ea9-f866-486d-add5-022214917b59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\items">
+      <UniqueIdentifier>{00fd9e1e-3a0d-4f9a-a24b-3ca8d458cc81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\items">
+      <UniqueIdentifier>{50fbeaa9-9953-4baa-b21d-95612d62f742}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\events">
+      <UniqueIdentifier>{e6508f10-060e-4461-ade2-cfa464ff515d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\components">
+      <UniqueIdentifier>{614b518c-71c3-4baf-aeab-d4694dbc1a5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\NewFilter2">
+      <UniqueIdentifier>{01a62663-c6b7-4338-9e85-8ca12eb027cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\components">
+      <UniqueIdentifier>{0b4f4111-1f16-4053-be68-3eb8c19d117c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\maps">
+      <UniqueIdentifier>{33e959fd-6cda-441d-89d4-2881aed2d22c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\graphics">
+      <UniqueIdentifier>{18205fe8-ad56-4690-96a0-f72f4cac23e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\graphics">
+      <UniqueIdentifier>{38a21687-a8cf-4a2b-8648-8f5e6e0a76c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\maps">
+      <UniqueIdentifier>{f619e3b6-bae6-4934-9271-17c0d3b604fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\log">
+      <UniqueIdentifier>{ebe9c805-94bc-45b0-ae9e-a3cca6139ae2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\log">
+      <UniqueIdentifier>{1258a8fd-e0f0-4c5d-87d1-d24dcbb39142}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\graphics\screens">
+      <UniqueIdentifier>{168bbded-7841-4a83-a970-806ab82b7788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\graphics\screens">
+      <UniqueIdentifier>{dc4d7b07-677f-4c5a-b513-3c40bbd7cdf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\actions">
+      <UniqueIdentifier>{05499786-6194-4912-8b79-fe6b9a1fb97a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\elements">
+      <UniqueIdentifier>{2c028a98-0c9e-41d9-a4c6-693d9dbe7285}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\Elements">
+      <UniqueIdentifier>{18cff2e5-1c6d-4893-b43d-97d0531ed11a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\utility">
+      <UniqueIdentifier>{c5e4eddb-8753-41c9-a2d8-ff11f9e30c71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\scipting">
+      <UniqueIdentifier>{33539e21-cc46-4479-b846-8c7b08797fcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\databases">
+      <UniqueIdentifier>{8cde2756-4705-4b9d-91e8-8a4067505d28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\databases">
+      <UniqueIdentifier>{b47fe557-bb1a-4ab8-a79a-63fb79365c34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\entity">
+      <UniqueIdentifier>{02e53432-f4aa-4d41-b581-c5e5e9f7f712}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\entity">
+      <UniqueIdentifier>{48a8b926-443d-4145-9933-66013b82cdc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="html">
+      <UniqueIdentifier>{4e949224-a007-4561-9010-58f8c3e632ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="html\scriptingfiles">
+      <UniqueIdentifier>{ad4307e7-406b-4441-a4d1-a02f803f65c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="html\testimages">
+      <UniqueIdentifier>{44227fdb-979d-4785-9075-468d39406d69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="html\fonts">
+      <UniqueIdentifier>{6b957667-393f-4636-a45f-fae31eb8a59d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\contentmanager">
+      <UniqueIdentifier>{78975a47-66dc-4aeb-adc1-f8bcb58c3caf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\cache">
+      <UniqueIdentifier>{bf5e9c7a-f8f3-4603-a60b-8288ed7dfc80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\cache">
+      <UniqueIdentifier>{da40aa95-b849-4985-897a-19abee3c8c6e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\engine\delegates\FastDelegate.h">
+      <Filter>Header Files\engine\delegates</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\delegates\FastDelegateBind.h">
+      <Filter>Header Files\engine\delegates</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\events\IEventManager.h">
+      <Filter>Header Files\engine\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\utilities\Cloneable.h">
+      <Filter>Header Files\engine\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\events\EventManager.h">
+      <Filter>Header Files\engine\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\events\IEvent.h">
+      <Filter>Header Files\engine\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\Engine.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\time\TimeModule.h">
+      <Filter>Header Files\engine\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\configuration\ApplicationConfiguration.h">
+      <Filter>Header Files\engine\configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\input\controls\InputModule.h">
+      <Filter>Header Files\engine\input\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\input\files\xml\BasicKeyValueReader.h">
+      <Filter>Header Files\engine\input\files\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\input\files\xml\pugiconfig.hpp">
+      <Filter>Header Files\engine\input\files\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\input\files\xml\pugixml.hpp">
+      <Filter>Header Files\engine\input\files\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\events\eventtypes\InputActionEvent.h">
+      <Filter>Header Files\engine\events\eventtypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\EngineTests.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\component\Component.h">
+      <Filter>Header Files\engine\component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\entity\Entity.h">
+      <Filter>Header Files\engine\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\utilities\PropertyManager.h">
+      <Filter>Header Files\engine\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\audio\AudioSystem.h">
+      <Filter>Header Files\engine\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\events\eventtypes\EntityCreatedEvent.h">
+      <Filter>Header Files\engine\events\eventtypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\events\eventtypes\EntityDestroyedEvent.h">
+      <Filter>Header Files\engine\events\eventtypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\events\eventtypes\ComponentCreatedEvent.h">
+      <Filter>Header Files\engine\events\eventtypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\events\eventtypes\ComponentDestroyedEvent.h">
+      <Filter>Header Files\engine\events\eventtypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\events\eventtypes\GameClosingEvent.h">
+      <Filter>Header Files\engine\events\eventtypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\events\eventtypes\GameReadyEvent.h">
+      <Filter>Header Files\engine\events\eventtypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\events\eventtypes\TimeTickEvent.h">
+      <Filter>Header Files\engine\events\eventtypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\events\eventtypes\ScreenCreatedEvent.h">
+      <Filter>Header Files\engine\events\eventtypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\events\eventtypes\ScreenDestroyedEvent.h">
+      <Filter>Header Files\engine\events\eventtypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\events\eventtypes\AudioEvents.h">
+      <Filter>Header Files\engine\events\eventtypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\battle\TurnGenerator.h">
+      <Filter>Header Files\game\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\battle\Mechanics.h">
+      <Filter>Header Files\game\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\battle\CharacterTickEvent.h">
+      <Filter>Header Files\game\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\actions\Action.h">
+      <Filter>Header Files\game\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\actions\UserTargetGrouping.h">
+      <Filter>Header Files\game\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\battle\CallConditions.h">
+      <Filter>Header Files\game\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\abilities\AbilityComponent.h">
+      <Filter>Header Files\game\abilites</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\entity\EntityFactory.h">
+      <Filter>Header Files\engine\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\abilities\AbilityLibrary.h">
+      <Filter>Header Files\game\abilites</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\graphics\IAnimator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\items\ItemComponent.h">
+      <Filter>Header Files\game\items</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\character\BaseCharacterComponent.h">
+      <Filter>Header Files\game\character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\character\Stats.h">
+      <Filter>Header Files\game\character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\events\StatChangeEvent.h">
+      <Filter>Header Files\game\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\events\KOEvent.h">
+      <Filter>Header Files\game\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\components\AbilityManagerComponent.h">
+      <Filter>Header Files\game\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\components\StatComponent.h">
+      <Filter>Header Files\game\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\components\StatManagerComponent.h">
+      <Filter>Header Files\game\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\components\ComponentCreators.h">
+      <Filter>Header Files\game\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\maps\Map.h">
+      <Filter>Header Files\engine\maps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\maps\TileMap.h">
+      <Filter>Header Files\engine\maps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\graphics\BigTexture.h">
+      <Filter>Header Files\engine\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\graphics\BigSprite.h">
+      <Filter>Header Files\engine\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\maps\MapLayer.h">
+      <Filter>Header Files\engine\maps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\utilities\base64.h">
+      <Filter>Header Files\engine\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\maps\TileSet.h">
+      <Filter>Header Files\engine\maps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\log\Log.h">
+      <Filter>Header Files\engine\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\graphics\screens\Screen.h">
+      <Filter>Header Files\engine\graphics\screens</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\time\Updater.h">
+      <Filter>Header Files\engine\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\time\Timer.h">
+      <Filter>Header Files\engine\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\time\StopWatch.h">
+      <Filter>Header Files\engine\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\time\DispatchTimer.h">
+      <Filter>Header Files\engine\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\events\eventtypes\TimerFinishedEvent.h">
+      <Filter>Header Files\engine\events\eventtypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\time\TimingWindow.h">
+      <Filter>Header Files\engine\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\input\controls\TimedInputController.h">
+      <Filter>Header Files\engine\input\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\events\eventtypes\TimingWindowEvents.h">
+      <Filter>Header Files\engine\events\eventtypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\graphics\screens\ScreenManager.h">
+      <Filter>Header Files\engine\graphics\screens</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\graphics\screens\AwesomiumScreen.h">
+      <Filter>Header Files\engine\graphics\screens</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\graphics\awesomium.h">
+      <Filter>Header Files\engine\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\graphics\Webtile.h">
+      <Filter>Header Files\engine\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\graphics\IDrawable.h">
+      <Filter>Header Files\engine\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\graphics\IAnimatedDraw.h">
+      <Filter>Header Files\engine\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\utilities\awesomium_method_dispatcher.h">
+      <Filter>Header Files\engine\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\components\StatLevelingComponent.h">
+      <Filter>Header Files\game\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\events\LevelChangeEvent.h">
+      <Filter>Header Files\game\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\actions\Attack.h">
+      <Filter>Header Files\game\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\actions\ActionGroup.h">
+      <Filter>Header Files\game\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\actions\ActionUseComponent.h">
+      <Filter>Header Files\game\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\components\ElementalComponent.h">
+      <Filter>Header Files\game\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\elements\Elements.h">
+      <Filter>Header Files\game\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\components\ActionModifierComponent.h">
+      <Filter>Header Files\game\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\battle\BattleField.h">
+      <Filter>Header Files\game\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\components\BattleCharacterComponent.h">
+      <Filter>Header Files\game\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\components\IsCriticalHitOverrideComponent.h">
+      <Filter>Header Files\game\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\components\CriticalHitDamageMultiplierOverride.h">
+      <Filter>Header Files\game\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\components\IsHitOverrideComponent.h">
+      <Filter>Header Files\game\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\components\ActionCostOverride.h">
+      <Filter>Header Files\game\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\components\ActionPreprocessComponent.h">
+      <Filter>Header Files\game\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\components\UseActionComponent.h">
+      <Filter>Header Files\game\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\components\CalcDamageOverrideComponent.h">
+      <Filter>Header Files\game\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\events\ActionProcessedEvent.h">
+      <Filter>Header Files\game\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\utility\Priority.h">
+      <Filter>Header Files\game\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\components\MultiActionComponent.h">
+      <Filter>Header Files\game\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\input\controls\InputReceiver.h">
+      <Filter>Header Files\engine\input\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\components\StatusManagerComponent.h">
+      <Filter>Header Files\game\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\components\StatusEffectComponent.h">
+      <Filter>Header Files\game\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\components\ApplyComponent.h">
+      <Filter>Header Files\game\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\databases\EntityDatabase.h">
+      <Filter>Header Files\game\databases</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\databases\StatusEffectDatabase.h">
+      <Filter>Header Files\game\databases</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\entity\GameEntityFactory.h">
+      <Filter>Header Files\game\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\components\StatChangeOnApplyComponent.h">
+      <Filter>Header Files\game\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\utilities\BoostOverrides.h">
+      <Filter>Header Files\engine\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\events\eventtypes\NewAwesomiumScreenEvent.h">
+      <Filter>Header Files\engine\events\eventtypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\events\eventtypes\PopWindowEvent.h">
+      <Filter>Header Files\engine\events\eventtypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\maps\MapScreen.h">
+      <Filter>Header Files\engine\graphics\screens</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\contentmanager\ContentManager.h">
+      <Filter>Header Files\engine\contentmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\cache\TextureCache.h">
+      <Filter>Header Files\engine\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\cache\Cache.h">
+      <Filter>Header Files\engine\cache</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\events\IEvent.cpp">
+      <Filter>Source Files\engine\events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\events\EventManager.cpp">
+      <Filter>Source Files\engine\events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\Engine.cpp">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\configuration\ApplicationConfiguration.cpp">
+      <Filter>Source Files\engine\configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\input\files\xml\pugixml.cpp">
+      <Filter>Source Files\engine\input\files\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\input\controls\InputModule.cpp">
+      <Filter>Source Files\engine\input\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\events\eventtypes\InputActionEvent.cpp">
+      <Filter>Source Files\engine\events\eventtypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\EngineTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\component\Component.cpp">
+      <Filter>Source Files\engine\component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\utilities\PropertyManager.cpp">
+      <Filter>Source Files\engine\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\audio\AudioSystem.cpp">
+      <Filter>Source Files\engine\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\entity\Entity.cpp">
+      <Filter>Source Files\engine\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\battle\Mechanics.cpp">
+      <Filter>Source Files\game\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\entity\EntityFactory.cpp">
+      <Filter>Source Files\engine\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\events\eventtypes\AudioEvents.cpp">
+      <Filter>Source Files\engine\events\eventtypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\items\ItemComponent.cpp">
+      <Filter>Source Files\game\items</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\character\Stats.cpp">
+      <Filter>Source Files\game\character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\events\KOEvent.cpp">
+      <Filter>Source Files\game\events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\events\StatChangeEvent.cpp">
+      <Filter>Source Files\game\events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\components\StatComponent.cpp">
+      <Filter>Source Files\game\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\components\StatManagerComponent.cpp">
+      <Filter>Source Files\game\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\components\ComponentCreators.cpp">
+      <Filter>Source Files\game\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\graphics\BigTexture.cpp">
+      <Filter>Source Files\engine\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\graphics\BigSprite.cpp">
+      <Filter>Source Files\engine\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\graphics\ParticleSystem.cpp">
+      <Filter>Source Files\engine\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\maps\Map.cpp">
+      <Filter>Source Files\engine\maps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\maps\TileMap.cpp">
+      <Filter>Source Files\engine\maps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\maps\MapLayer.cpp">
+      <Filter>Source Files\engine\maps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\utilities\base64.cpp">
+      <Filter>Source Files\engine\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\maps\TileSet.cpp">
+      <Filter>Source Files\engine\maps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\log\Log.cpp">
+      <Filter>Source Files\engine\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\time\StopWatch.cpp">
+      <Filter>Source Files\engine\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\time\Timer.cpp">
+      <Filter>Source Files\engine\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\time\CallbackTimer.cpp">
+      <Filter>Source Files\engine\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\time\TimingWindow.cpp">
+      <Filter>Source Files\engine\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\events\eventtypes\TimingWindowEvents.cpp">
+      <Filter>Source Files\engine\events\eventtypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\input\controls\TimedInputController.cpp">
+      <Filter>Source Files\engine\input\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\graphics\awesomium.cpp">
+      <Filter>Source Files\engine\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\graphics\screens\AwesomiumScreen.cpp">
+      <Filter>Source Files\engine\graphics\screens</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\graphics\WebTile.cpp">
+      <Filter>Header Files\engine\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\graphics\screens\ScreenManager.cpp">
+      <Filter>Source Files\engine\graphics\screens</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\utilities\awesomium_method_dispatcher.cpp">
+      <Filter>Source Files\engine\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\components\StatLevelingComponent.cpp">
+      <Filter>Source Files\game\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\actions\Action.cpp">
+      <Filter>Source Files\game\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\actions\Attack.cpp">
+      <Filter>Source Files\game\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\components\ElementalComponent.cpp">
+      <Filter>Source Files\game\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\elements\Elements.cpp">
+      <Filter>Source Files\game\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\components\BattleCharacterComponent.cpp">
+      <Filter>Source Files\game\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\components\ActionModifierComponent.cpp">
+      <Filter>Source Files\game\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\actions\ActionGroup.cpp">
+      <Filter>Source Files\game\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\character\BaseCharacterComponent.cpp">
+      <Filter>Source Files\game\character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\components\ActionCostOverride.cpp">
+      <Filter>Source Files\game\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\components\UseActionComponent.cpp">
+      <Filter>Source Files\game\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\events\ActionProcessedEvent.cpp">
+      <Filter>Source Files\engine\events\eventtypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\components\MultiActionComponent.cpp">
+      <Filter>Source Files\game\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\graphics\screens\Screen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\components\StatusManagerComponent.cpp">
+      <Filter>Source Files\game\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\components\StatusEffectComponent.cpp">
+      <Filter>Source Files\game\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\databases\EntityDatabase.cpp">
+      <Filter>Source Files\game\databases</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\databases\StatusEffectDatabase.cpp">
+      <Filter>Source Files\game\databases</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\entity\GameEntityFactory.cpp">
+      <Filter>Source Files\game\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\components\StatChangeOnApplyComponent.cpp">
+      <Filter>Source Files\game\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\events\StatusEffectAddedEvent.cpp">
+      <Filter>Source Files\game\events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\utilities\BoostOverrides.cpp">
+      <Filter>Source Files\engine\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\events\eventtypes\NewAwesomiumScreenEvent.cpp">
+      <Filter>Source Files\engine\events\eventtypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\cache\TextureCache.cpp">
+      <Filter>Source Files\engine\cache</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\resources\html\scriptingfiles\input_module.js">
+      <Filter>html\scriptingfiles</Filter>
+    </None>
+    <None Include="..\..\resources\html\scriptingfiles\jquery-2.2.3.js">
+      <Filter>html\scriptingfiles</Filter>
+    </None>
+    <None Include="..\..\resources\html\scriptingfiles\jquery-ui.css">
+      <Filter>html\scriptingfiles</Filter>
+    </None>
+    <None Include="..\..\resources\html\scriptingfiles\jquery-ui.js">
+      <Filter>html\scriptingfiles</Filter>
+    </None>
+    <None Include="..\..\resources\html\scriptingfiles\jquery-ui.min.css">
+      <Filter>html\scriptingfiles</Filter>
+    </None>
+    <None Include="..\..\resources\html\scriptingfiles\jquery-ui.min.js">
+      <Filter>html\scriptingfiles</Filter>
+    </None>
+    <None Include="..\..\resources\html\scriptingfiles\jquery-ui.structure.css">
+      <Filter>html\scriptingfiles</Filter>
+    </None>
+    <None Include="..\..\resources\html\scriptingfiles\jquery-ui.structure.min.css">
+      <Filter>html\scriptingfiles</Filter>
+    </None>
+    <None Include="..\..\resources\html\scriptingfiles\jquery-ui.theme.css">
+      <Filter>html\scriptingfiles</Filter>
+    </None>
+    <None Include="..\..\resources\html\scriptingfiles\jquery-ui.theme.min.css">
+      <Filter>html\scriptingfiles</Filter>
+    </None>
+    <None Include="..\..\resources\html\FontLoads.css">
+      <Filter>html</Filter>
+    </None>
+    <None Include="..\..\resources\html\NewGameOptions.html">
+      <Filter>html</Filter>
+    </None>
+    <None Include="..\..\resources\html\Test.html">
+      <Filter>html</Filter>
+    </None>
+    <None Include="..\..\resources\html\TitleScreen .html">
+      <Filter>html</Filter>
+    </None>
+    <None Include="..\..\resources\html\TitleScreen.css">
+      <Filter>html</Filter>
+    </None>
+    <None Include="..\..\resources\html\TitleScreen.html">
+      <Filter>html</Filter>
+    </None>
+  </ItemGroup>
+</Project>

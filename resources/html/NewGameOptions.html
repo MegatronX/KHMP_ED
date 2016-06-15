@@ -1,0 +1,299 @@
+<html>
+  <head>
+    <title>Title Screen</title>
+    <style type="text/css">
+    @font-face
+{
+    font-family: Chaney;
+    src: url("fonts/chaney_normal-webfont.ttf") format('truetype');
+
+}
+        html {
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+    .background
+    {
+        width: 1000px;
+        height: 750px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .body
+    {
+        font-family: Chaney;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .mainpanel
+    {
+        width: 800px;
+        height: 600px;
+        position: relative;
+    }
+    
+    .newgamepanel
+    {
+        position: absolute;
+        top: 120px;
+        left: 185px;
+    }
+    /*New Game Title*/
+    .newgametitle
+    {
+        width: 346px;
+        height: 54px;
+        position: absolute;
+        left: 146px;
+        
+    }
+    .newgametitleback
+    {
+        width: 346px;
+        height: 54px;
+        position: absolute;
+    }
+    .newgametitlewords
+    {
+        font-family: Chaney;
+        font-size: 20px;
+        color: white;
+        position: absolute;
+        left: 1px;
+        top: 11px;
+        width: 334px;
+        text-align: center;
+    }
+    /*New Game Panel*/
+    .newgameoptionspanel
+    {
+        width: 650px;
+        height: 310px;
+        position: relative;
+        top: 60px;
+    }
+    .newgameoptionsback
+    {
+        width: 650px;
+        height: 310px;
+    }
+    .difficulties
+    {
+        position: absolute;
+        top: 50px;
+        left: 147px;
+        width: 346px;
+        height: 140px;
+    }
+    .easydifficulty
+    {
+        position: absolute;
+    }
+    .normaldifficulty
+    {
+        position: absolute;
+        top: 42px;
+    }
+    .harddifficulty
+    {
+        position: absolute;
+        top: 84px;
+    }
+    .difficultytext
+    {
+        width: 346px;
+        color: red;
+        z-index: 4;
+        font-family: Chaney;
+        font-size: 20px;
+        color: white;
+        shadow-font-effect: shadow;
+        shadow-offset: 1px 1px 1px 1px;
+        shadow-color: rgba(63, 191, 255, 200);
+        position: absolute;
+        text-align: center;
+        margin-top: 6px;
+    }
+    .BackgroundImage
+    {
+        width: 346px;
+        height: 39px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .nsdifficultyback
+    {
+        width: 346px;
+        height: 39px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .sdifficultyback
+    {
+        width: 346px;
+        height: 39px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .gamedifficultytext
+    {
+        font-family: Chaney;
+        font-size: 20px;
+        color: rgba(63, 191, 255, 200);
+        shadow-font-effect: shadow;
+        shadow-offset: 1px 1px 1px 1px;
+        shadow-color: rgba(63, 191, 255, 200);
+        position: absolute;
+        top: 200px;
+        width: 633px;
+        left: 10px;
+    }
+    .cursorBeginner
+    {
+        position: relative;
+        left: 60px;
+        top: 160px;
+        z-index: 1;
+    }
+    .cursorSt
+    {
+        position: relative;
+        left: 60px;
+        top: 205px;
+        z-index: 1;
+    }
+    .cursorStandard
+    {
+        position: relative;
+        left: 60px;
+        top: 205px;
+        z-index: 1;
+    }
+    .cursorExpert
+    {
+        position: relative;
+        left: 60px;
+        top: 250px;
+        z-index: 1;
+    }
+	.testText
+	{
+		font-family: Chaney;
+        font-size: 20px;
+        color: rgba(63, 191, 255, 200);
+	}
+    </style>
+    <script type="text/javascript" src="scriptingfiles/input_module.js"></script>
+    <script type="text/javascript" src="scriptingfiles/jquery-2.2.3.js"></script>
+  </head>
+  <script>
+      var cursorIndex = 1;
+      var seChannel = 7;
+
+      function animatethis(targetElement, speed, pixels) {
+          $(targetElement).animate({ marginLeft: "+=" + pixels + "px" },
+          {
+              duration: speed,
+              complete: function () {
+                  targetElement.animate({ marginLeft: "-=" + pixels + "px" },
+                  {
+                      duration: speed,
+                      complete: function () {
+                          animatethis(targetElement, speed, pixels);
+                      }
+                  });
+              }
+          });
+      };
+      function prepPage()
+      {
+          animatethis($('#MainCursorDiv'), 550, 20);
+          audioTest();
+          
+      }
+  function audioTest()
+  {
+	//Engine.AudioSystem.addSound("Dearly Beloved", "Dearly Beloved");
+	//Engine.AudioSystem.playSound("Dearly Beloved", true);
+	//loadSoundEffects();
+  }
+  function loadSoundEffects()
+  {
+      Engine.AudioSystem.addSound("SelectionCancel", "Cancel", true, "", true, ".wav");
+      Engine.AudioSystem.addSound("SelectionConfirm", "Confirm", true, "", true, ".wav");
+      Engine.AudioSystem.addSound("SelectionChange", "Change", true, "", true, ".wav");
+  }
+  function handleInput(action, pushed, player, time)
+  {
+      if (pushed)
+      {
+          if ((action == InputAction.Down || action == InputAction.Up) && pushed)
+          {
+              //document.getElementById("test").innerHTML = action;
+              cursorIndex = (action == InputAction.Down) ? ((cursorIndex + 1) % 3) 
+                      : ((action == InputAction.Up) ? ((cursorIndex - 1) < 0 ? 2 : (cursorIndex - 1))
+                      : cursorIndex);
+          
+              var cursor = document.getElementById("MainCursorDiv");
+              switch (cursorIndex)
+              {
+                  case 0:
+                      cursor.className = "cursorBeginner";
+                      break;
+                  case 1:
+                      cursor.className = "cursorStandard";
+                      break;
+                  case 2:
+                      cursor.className = "cursorExpert";
+                      break;
+                  default:
+                      cursor.className = "cursorSt";
+                      break;
+              }
+              Engine.AudioSystem.playSound("Change", seChannel, false);
+              return true;
+          }
+          else if (action == InputAction.Confirm)
+          {
+              Engine.AudioSystem.playSound("Confirm", seChannel, false);
+          }
+          else if (action == InputAction.Cancel)
+          {
+              Engine.AudioSystem.playSound("Cancel", seChannel, false);
+              Engine.ScreenManager.PopScreen("this");
+          }
+      }
+      
+ }
+  </script>
+  <body onload="prepPage()">
+    <div id="Background" class="background"/>  
+    <div id="NewGamePanel" class="newgamepanel">
+        <div id="MainCursorDiv" class="cursorSt"><img id="MainCursor" src="testimages/Cursor.png"/></div>
+        <div id="NewGameTitle" class="newgametitle">
+           <img id="newgametitleback" class="newgametitleback" src="testimages/MenuTitle.png"/>
+           <div id="newgametitlewords" class="newgametitlewords">New Game</div>
+        </div>
+        <div id="NewGameOptions" class="newgameoptionspanel">
+            <img id="NewGameOptionsBack" class="newgameoptionsback" src="testimages/MenuBack.png"/>
+            <div id="Diffulcties" class="difficulties">
+                <div id="EasyDifficulty" class="easydifficulty">
+                    <div id="BackgroundImage0" class="BackgroundImage"><img id="EasyDifficultyBack" class="nsdifficultyback" src="testimages/NewGameOptionBack.png"/></div>
+                    <div id="EasyDifficultyText" class="difficultytext">Beginner</div>
+                </div>
+                <div id="NormalDifficulty" class="normaldifficulty">
+                     <div id="BackgroundImage1" class="BackgroundImage"><img id="NormalDifficultyBack" class="nsdifficultyback" src="testimages/NewGameOptionBack.png"/></div>
+                    <div id="NormalDifficultyText" class="difficultytext">Standard</div>
+                </div>
+                <div id="HardDifficulty" class="harddifficulty">
+                    <div id="BackgroundImage2" class="BackgroundImage"><img id="HardDifficultyBack" class="nsdifficultyback" src="testimages/NewGameOptionBack.png"/></div>
+                    <div id="HardDifficultyText" class="difficultytext">Expert</div>
+                </div>
+            </div>
+            <div id="gamedifficultytext" class="gamedifficultytext"/>
+        </div>
+        </div>
+    </div>
+  </body>
+</html>

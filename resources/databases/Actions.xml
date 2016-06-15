@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDatabase>
+  <Actions>
+    <Attacks>
+      <Attack name="White Wind" mp="38" class="Healing">
+        <Description>A swirling wind of life force and vitality flows out of you, healing nearby allies</Description>
+        <BattleText></BattleText>
+        <Targetting>
+          <AllPartymembers/>
+        </Targetting>
+        <Components>
+          <DamageComponent type="script" index="DamageComponent" language="python">
+            <![CDATA[
+             def CalcualteDamage(action, target, mechanics):
+                 user = action.getUsers()[0]
+                 heal = user.getStatManager().getCurrentHP()
+                 return -heal
+             ]]>
+          </DamageComponent>
+        </Components>
+      </Attack>
+      <Attack name="1 Needle" mp="0" class="damage">
+        <Components>
+          <FixedDamageComponent index="DamageComponent">
+            <FixedDamage>1</FixedDamage>
+          </FixedDamageComponent>
+        </Components>
+      </Attack>
+      <Attack name="1000 Needles" mp="10" class="damage">
+        <Description></Description>
+        <Components>
+          <MultiAttackComponent>
+            <AttackSequence repeat="1000">
+              <Attack name="1 Needle"/>
+            </AttackSequence>
+          </MultiAttackComponent>
+        </Components>
+      </Attack>
+    </Attacks>
+  </Actions>
+</EntityDatabase>

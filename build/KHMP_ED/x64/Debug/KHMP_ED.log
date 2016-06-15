@@ -1,0 +1,162 @@
+﻿Build started 16/11/2015 1:29:34 PM.
+     1>Project "E:\KHMP_ED\build\KHMP_ED\KHMP_ED.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /D DEBUG /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt ..\..\src\engine\audio\AudioSystem.cpp ..\..\src\engine\component\Component.cpp ..\..\src\engine\configuration\ApplicationConfiguration.cpp ..\..\src\engine\Engine.cpp ..\..\src\engine\EngineTests.cpp ..\..\src\engine\entity\Entity.cpp ..\..\src\engine\entity\EntityFactory.cpp ..\..\src\engine\events\EventManager.cpp ..\..\src\engine\events\eventtypes\AudioEvents.cpp ..\..\src\engine\events\eventtypes\InputActionEvent.cpp ..\..\src\engine\events\eventtypes\TimingWindowEvents.cpp ..\..\src\engine\events\IEvent.cpp ..\..\src\engine\graphics\awesomium.cpp ..\..\src\engine\graphics\BigSprite.cpp ..\..\src\engine\graphics\BigTexture.cpp ..\..\src\engine\graphics\ParticleSystem.cpp ..\..\src\engine\graphics\screens\AwesomiumScreen.cpp ..\..\src\engine\graphics\WebTile.cpp ..\..\src\engine\input\controls\InputModule.cpp ..\..\src\engine\input\controls\TimedInputController.cpp ..\..\src\engine\input\files\xml\pugixml.cpp ..\..\src\engine\log\Log.cpp ..\..\src\engine\maps\Map.cpp ..\..\src\engine\maps\MapLayer.cpp ..\..\src\engine\maps\TileMap.cpp ..\..\src\engine\maps\TileSet.cpp ..\..\src\engine\time\CallbackTimer.cpp ..\..\src\engine\time\StopWatch.cpp ..\..\src\engine\time\Timer.cpp ..\..\src\engine\time\TimingWindow.cpp ..\..\src\engine\utilities\base64.cpp ..\..\src\engine\utilities\PropertyManager.cpp ..\..\src\game\battle\BattleCharacterComponent.cpp ..\..\src\game\battle\Mechanics.cpp ..\..\src\game\character\Stats.cpp ..\..\src\game\components\ComponentCreators.cpp ..\..\src\game\components\StatComponent.cpp ..\..\src\game\components\StatManagerComponent.cpp ..\..\src\game\events\KOEvent.cpp ..\..\src\game\events\StatChangeEvent.cpp ..\..\src\game\items\ItemComponent.cpp ..\..\src\main.cpp
+         main.cpp
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(52): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(69): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(84): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+         ItemComponent.cpp
+         StatChangeEvent.cpp
+     1>..\..\src\game\events\StatChangeEvent.cpp(43): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+         KOEvent.cpp
+         StatManagerComponent.cpp
+     1>..\..\src\game\components\StatManagerComponent.cpp(293): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\..\src\game\components\StatManagerComponent.cpp(294): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\..\src\game\components\StatManagerComponent.cpp(295): warning C4267: 'initializing' : conversion from 'size_t' to 'const int', possible loss of data
+         StatComponent.cpp
+     1>..\..\src\game\components\StatComponent.cpp(124): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         ComponentCreators.cpp
+     1>..\..\src\game\components\ComponentCreators.cpp(51): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         Stats.cpp
+         Mechanics.cpp
+         BattleCharacterComponent.cpp
+         PropertyManager.cpp
+         base64.cpp
+     1>..\..\src\engine\utilities\base64.cpp(56): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\..\src\engine\utilities\base64.cpp(68): warning C4267: '=' : conversion from 'size_t' to 'unsigned char', possible loss of data
+     1>..\..\src\engine\utilities\base64.cpp(86): warning C4267: '=' : conversion from 'size_t' to 'unsigned char', possible loss of data
+     1>..\..\src\engine\utilities\base64.cpp(101): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>..\..\src\engine\utilities\base64.cpp(112): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\..\src\engine\utilities\base64.cpp(125): warning C4267: '=' : conversion from 'size_t' to 'unsigned char', possible loss of data
+     1>..\..\src\engine\utilities\base64.cpp(143): warning C4267: '=' : conversion from 'size_t' to 'unsigned char', possible loss of data
+     1>..\..\src\engine\utilities\base64.cpp(154): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\src\engine\utilities\base64.cpp(163): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\..\src\engine\utilities\base64.cpp(176): warning C4267: '=' : conversion from 'size_t' to 'unsigned char', possible loss of data
+     1>..\..\src\engine\utilities\base64.cpp(194): warning C4267: '=' : conversion from 'size_t' to 'unsigned char', possible loss of data
+     1>..\..\src\engine\utilities\base64.cpp(205): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\src\engine\utilities\base64.cpp(213): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\..\src\engine\utilities\base64.cpp(226): warning C4267: '=' : conversion from 'size_t' to 'unsigned char', possible loss of data
+     1>..\..\src\engine\utilities\base64.cpp(244): warning C4267: '=' : conversion from 'size_t' to 'unsigned char', possible loss of data
+     1>..\..\src\engine\utilities\base64.cpp(255): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\src\engine\utilities\base64.cpp(263): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\..\src\engine\utilities\base64.cpp(276): warning C4267: '=' : conversion from 'size_t' to 'unsigned char', possible loss of data
+     1>..\..\src\engine\utilities\base64.cpp(294): warning C4267: '=' : conversion from 'size_t' to 'unsigned char', possible loss of data
+     1>..\..\src\engine\utilities\base64.cpp(307): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\..\src\engine\utilities\base64.cpp(318): warning C4267: '=' : conversion from 'size_t' to 'unsigned char', possible loss of data
+     1>..\..\src\engine\utilities\base64.cpp(335): warning C4267: '=' : conversion from 'size_t' to 'unsigned char', possible loss of data
+         TimingWindow.cpp
+         Timer.cpp
+         StopWatch.cpp
+         CallbackTimer.cpp
+         TileSet.cpp
+         TileMap.cpp
+         MapLayer.cpp
+         Map.cpp
+         Generating Code...
+         Compiling...
+         Log.cpp
+         pugixml.cpp
+         TimedInputController.cpp
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(52): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(69): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(84): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+         InputModule.cpp
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(52): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(69): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(84): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+         WebTile.cpp
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(52): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(69): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(84): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+         AwesomiumScreen.cpp
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(52): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(69): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(84): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+         ParticleSystem.cpp
+         BigTexture.cpp
+         BigSprite.cpp
+         awesomium.cpp
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(52): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(69): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(84): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+         IEvent.cpp
+         TimingWindowEvents.cpp
+         InputActionEvent.cpp
+         AudioEvents.cpp
+         EventManager.cpp
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(52): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(69): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(84): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>..\..\src\engine\events\EventManager.cpp(44): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\..\src\engine\events\EventManager.cpp(54): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\..\src\engine\events\EventManager.cpp(69): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+         EntityFactory.cpp
+         Entity.cpp
+         EngineTests.cpp
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(52): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(69): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(84): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>..\..\src\engine\EngineTests.cpp(90): warning C4305: 'initializing' : truncation from 'double' to 'float'
+         Engine.cpp
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(52): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(69): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(84): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+         ApplicationConfiguration.cpp
+         Generating Code...
+         Compiling...
+         Component.cpp
+         AudioSystem.cpp
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(52): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(69): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>E:\KHMP_ED\extlib\include\Awesomium/STLHelpers.h(84): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\KHMP_ED\build\x64\Debug\KHMP_ED.exe" /INCREMENTAL /NOLOGO "sfml-audio-d.lib" "sfml-graphics-d.lib" "sfml-main-d.lib" "sfml-network-d.lib" "sfml-system-d.lib" "sfml-window-d.lib" opengl32.lib glu32.lib fmodex_vc.lib libcocos2d.lib awesomium.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\KHMP_ED\build\x64\Debug\KHMP_ED.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\KHMP_ED\build\x64\Debug\KHMP_ED.lib" /MACHINE:X64 x64\Debug\AudioSystem.obj
+         x64\Debug\Component.obj
+         x64\Debug\ApplicationConfiguration.obj
+         x64\Debug\Engine.obj
+         x64\Debug\EngineTests.obj
+         x64\Debug\Entity.obj
+         x64\Debug\EntityFactory.obj
+         x64\Debug\EventManager.obj
+         x64\Debug\AudioEvents.obj
+         x64\Debug\InputActionEvent.obj
+         x64\Debug\TimingWindowEvents.obj
+         x64\Debug\IEvent.obj
+         x64\Debug\awesomium.obj
+         x64\Debug\BigSprite.obj
+         x64\Debug\BigTexture.obj
+         x64\Debug\ParticleSystem.obj
+         x64\Debug\AwesomiumScreen.obj
+         x64\Debug\WebTile.obj
+         x64\Debug\InputModule.obj
+         x64\Debug\TimedInputController.obj
+         x64\Debug\pugixml.obj
+         x64\Debug\Log.obj
+         x64\Debug\Map.obj
+         x64\Debug\MapLayer.obj
+         x64\Debug\TileMap.obj
+         x64\Debug\TileSet.obj
+         x64\Debug\CallbackTimer.obj
+         x64\Debug\StopWatch.obj
+         x64\Debug\Timer.obj
+         x64\Debug\TimingWindow.obj
+         x64\Debug\base64.obj
+         x64\Debug\PropertyManager.obj
+         x64\Debug\BattleCharacterComponent.obj
+         x64\Debug\Mechanics.obj
+         x64\Debug\Stats.obj
+         x64\Debug\ComponentCreators.obj
+         x64\Debug\StatComponent.obj
+         x64\Debug\StatManagerComponent.obj
+         x64\Debug\KOEvent.obj
+         x64\Debug\StatChangeEvent.obj
+         x64\Debug\ItemComponent.obj
+         x64\Debug\main.obj
+     1>awesomium.lib(awesomium.dll) : fatal error LNK1112: module machine type 'X86' conflicts with target machine type 'x64'
+     1>Done Building Project "E:\KHMP_ED\build\KHMP_ED\KHMP_ED.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:02:41.49

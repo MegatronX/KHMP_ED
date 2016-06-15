@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E4F4774C-CE01-4A6C-8B97-B3D5456DF6E2}</ProjectGuid>
+    <RootNamespace>KHMP_ED</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>..\..\src\engine;..\..\src\game;C:\Programming_Libraries\cpp\boost_1_59_0;..\..\extlib\include;$(IncludePath);C:\Programming_Libraries\cpp\boost_1_57_0</IncludePath>
+    <LibraryPath>..\..\extlib\lib;C:\Programming_Libraries\Cpp_Libraries\boost_1_59_0\stage\lib;$(LibraryPath);C:\Programming_Libraries\cpp\boost_1_57_0\stage\lib</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>..\..\src\engine;..\..\src\game;C:\Programming_Libraries\cpp\boost_1_57_0;C:\Programming_Libraries\cpp\boost_1_59_0;..\..\extlib\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\extlib\lib;C:\Programming_Libraries\Cpp_Libraries\boost_1_57_0\stage\lib;C:\Programming_Libraries\Cpp_Libraries\boost_1_59_0\stage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>..\..\src\engine;..\..\src\game;C:\Programming_Libraries\cpp\boost_1_59_0;..\..\extlib\include;$(IncludePath);C:\Programming_Libraries\cpp\boost_1_57_0</IncludePath>
+    <LibraryPath>..\..\extlib\lib;C:\Programming_Libraries\Cpp_Libraries\boost_1_59_0\stage\lib;$(LibraryPath);C:\Programming_Libraries\cpp\boost_1_57_0\stage\lib</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>..\..\src\engine;..\..\src\game;C:\Programming_Libraries\Cpp_Libraries\boost_1_57_0;C:\Programming_Libraries\cpp\boost_1_59_0;..\..\extlib\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\extlib\lib;C:\Programming_Libraries\Cpp_Libraries\boost_1_57_0\stage\lib;C:\Programming_Libraries\Cpp_Libraries\boost_1_59_0\stage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>sfml-audio-d.lib;sfml-graphics-d.lib;sfml-main-d.lib;sfml-network-d.lib;sfml-system-d.lib;sfml-window-d.lib;opengl32.lib;glu32.lib;fmodex_vc.lib;awesomium.lib;muparser32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>-D_SCL_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>sfml-audio-d.lib;sfml-graphics-d.lib;sfml-main-d.lib;sfml-network-d.lib;sfml-system-d.lib;sfml-window-d.lib;opengl32.lib;glu32.lib;fmodex_vc.lib;libcocos2d.lib;awesomium.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-audio.lib;sfml-graphics.lib;sfml-main.lib;sfml-network.lib;sfml-system.lib;sfml-window.lib;opengl32.lib;glu32.lib;fmodex_vc.lib;muparser32.lib;awesomium.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-audio.lib;sfml-graphics.lib;sfml-main.lib;sfml-network.lib;sfml-system.lib;sfml-window.lib;opengl32.lib;glu32.lib;fmodex_vc.lib;libcocos2d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\engine\audio\AudioSystem.h" />
+    <ClInclude Include="..\..\src\engine\cache\Cache.h" />
+    <ClInclude Include="..\..\src\engine\cache\TextureCache.h" />
+    <ClInclude Include="..\..\src\engine\component\Component.h" />
+    <ClInclude Include="..\..\src\engine\configuration\ApplicationConfiguration.h" />
+    <ClInclude Include="..\..\src\engine\contentmanager\ContentManager.h" />
+    <ClInclude Include="..\..\src\engine\delegates\FastDelegate.h" />
+    <ClInclude Include="..\..\src\engine\delegates\FastDelegateBind.h" />
+    <ClInclude Include="..\..\src\engine\Engine.h" />
+    <ClInclude Include="..\..\src\engine\EngineTests.h" />
+    <ClInclude Include="..\..\src\engine\entity\Entity.h" />
+    <ClInclude Include="..\..\src\engine\entity\EntityFactory.h" />
+    <ClInclude Include="..\..\src\engine\events\EventManager.h" />
+    <ClInclude Include="..\..\src\engine\events\eventtypes\AudioEvents.h" />
+    <ClInclude Include="..\..\src\engine\events\eventtypes\ComponentCreatedEvent.h" />
+    <ClInclude Include="..\..\src\engine\events\eventtypes\ComponentDestroyedEvent.h" />
+    <ClInclude Include="..\..\src\engine\events\eventtypes\EntityCreatedEvent.h" />
+    <ClInclude Include="..\..\src\engine\events\eventtypes\EntityDestroyedEvent.h" />
+    <ClInclude Include="..\..\src\engine\events\eventtypes\GameClosingEvent.h" />
+    <ClInclude Include="..\..\src\engine\events\eventtypes\GameReadyEvent.h" />
+    <ClInclude Include="..\..\src\engine\events\eventtypes\PopWindowEvent.h" />
+    <ClInclude Include="..\..\src\engine\events\eventtypes\InputActionEvent.h" />
+    <ClInclude Include="..\..\src\engine\events\eventtypes\NewAwesomiumScreenEvent.h" />
+    <ClInclude Include="..\..\src\engine\events\eventtypes\ScreenCreatedEvent.h" />
+    <ClInclude Include="..\..\src\engine\events\eventtypes\ScreenDestroyedEvent.h" />
+    <ClInclude Include="..\..\src\engine\events\eventtypes\TimerFinishedEvent.h" />
+    <ClInclude Include="..\..\src\engine\events\eventtypes\TimeTickEvent.h" />
+    <ClInclude Include="..\..\src\engine\events\eventtypes\TimingWindowEvents.h" />
+    <ClInclude Include="..\..\src\engine\events\IEvent.h" />
+    <ClInclude Include="..\..\src\engine\events\IEventManager.h" />
+    <ClInclude Include="..\..\src\engine\graphics\IAnimatedDraw.h" />
+    <ClInclude Include="..\..\src\engine\graphics\awesomium.h" />
+    <ClInclude Include="..\..\src\engine\graphics\BigSprite.h" />
+    <ClInclude Include="..\..\src\engine\graphics\BigTexture.h" />
+    <ClInclude Include="..\..\src\engine\graphics\IAnimator.h" />
+    <ClInclude Include="..\..\src\engine\graphics\IDrawable.h" />
+    <ClInclude Include="..\..\src\engine\graphics\screens\AwesomiumScreen.h" />
+    <ClInclude Include="..\..\src\engine\graphics\screens\Screen.h" />
+    <ClInclude Include="..\..\src\engine\graphics\screens\ScreenManager.h" />
+    <ClInclude Include="..\..\src\engine\graphics\Webtile.h" />
+    <ClInclude Include="..\..\src\engine\input\controls\InputModule.h" />
+    <ClInclude Include="..\..\src\engine\input\controls\InputReceiver.h" />
+    <ClInclude Include="..\..\src\engine\input\controls\TimedInputController.h" />
+    <ClInclude Include="..\..\src\engine\input\files\xml\BasicKeyValueReader.h" />
+    <ClInclude Include="..\..\src\engine\input\files\xml\pugiconfig.hpp" />
+    <ClInclude Include="..\..\src\engine\input\files\xml\pugixml.hpp" />
+    <ClInclude Include="..\..\src\engine\log\Log.h" />
+    <ClInclude Include="..\..\src\engine\maps\Map.h" />
+    <ClInclude Include="..\..\src\engine\maps\MapLayer.h" />
+    <ClInclude Include="..\..\src\engine\maps\MapScreen.h" />
+    <ClInclude Include="..\..\src\engine\maps\TileMap.h" />
+    <ClInclude Include="..\..\src\engine\maps\TileSet.h" />
+    <ClInclude Include="..\..\src\engine\time\DispatchTimer.h" />
+    <ClInclude Include="..\..\src\engine\time\StopWatch.h" />
+    <ClInclude Include="..\..\src\engine\time\TimeModule.h" />
+    <ClInclude Include="..\..\src\engine\time\Timer.h" />
+    <ClInclude Include="..\..\src\engine\time\TimingWindow.h" />
+    <ClInclude Include="..\..\src\engine\time\Updater.h" />
+    <ClInclude Include="..\..\src\engine\utilities\awesomium_method_dispatcher.h" />
+    <ClInclude Include="..\..\src\engine\utilities\base64.h" />
+    <ClInclude Include="..\..\src\engine\utilities\BoostOverrides.h" />
+    <ClInclude Include="..\..\src\engine\utilities\Cloneable.h" />
+    <ClInclude Include="..\..\src\engine\utilities\PropertyManager.h" />
+    <ClInclude Include="..\..\src\game\abilities\AbilityComponent.h" />
+    <ClInclude Include="..\..\src\game\abilities\AbilityLibrary.h" />
+    <ClInclude Include="..\..\src\game\actions\Action.h" />
+    <ClInclude Include="..\..\src\game\actions\ActionGroup.h" />
+    <ClInclude Include="..\..\src\game\actions\ActionUseComponent.h" />
+    <ClInclude Include="..\..\src\game\actions\Attack.h" />
+    <ClInclude Include="..\..\src\game\actions\UserTargetGrouping.h" />
+    <ClInclude Include="..\..\src\game\battle\BattleField.h" />
+    <ClInclude Include="..\..\src\game\battle\CallConditions.h" />
+    <ClInclude Include="..\..\src\game\battle\CharacterTickEvent.h" />
+    <ClInclude Include="..\..\src\game\battle\Mechanics.h" />
+    <ClInclude Include="..\..\src\game\battle\TurnGenerator.h" />
+    <ClInclude Include="..\..\src\game\character\BaseCharacterComponent.h" />
+    <ClInclude Include="..\..\src\game\character\Stats.h" />
+    <ClInclude Include="..\..\src\game\components\AbilityManagerComponent.h" />
+    <ClInclude Include="..\..\src\game\components\ActionCostOverride.h" />
+    <ClInclude Include="..\..\src\game\components\ActionModifierComponent.h" />
+    <ClInclude Include="..\..\src\game\components\ActionPreprocessComponent.h" />
+    <ClInclude Include="..\..\src\game\components\ApplyComponent.h" />
+    <ClInclude Include="..\..\src\game\components\BattleCharacterComponent.h" />
+    <ClInclude Include="..\..\src\game\components\CalcDamageOverrideComponent.h" />
+    <ClInclude Include="..\..\src\game\components\CriticalHitDamageMultiplierOverride.h" />
+    <ClInclude Include="..\..\src\game\components\ElementalComponent.h" />
+    <ClInclude Include="..\..\src\game\components\IsCriticalHitOverrideComponent.h" />
+    <ClInclude Include="..\..\src\game\components\IsHitOverrideComponent.h" />
+    <ClInclude Include="..\..\src\game\components\MultiActionComponent.h" />
+    <ClInclude Include="..\..\src\game\components\StatChangeOnApplyComponent.h" />
+    <ClInclude Include="..\..\src\game\components\StatComponent.h" />
+    <ClInclude Include="..\..\src\game\components\StatLevelingComponent.h" />
+    <ClInclude Include="..\..\src\game\components\StatManagerComponent.h" />
+    <ClInclude Include="..\..\src\game\components\ComponentCreators.h" />
+    <ClInclude Include="..\..\src\game\components\StatusEffectComponent.h" />
+    <ClInclude Include="..\..\src\game\components\StatusManagerComponent.h" />
+    <ClInclude Include="..\..\src\game\components\UseActionComponent.h" />
+    <ClInclude Include="..\..\src\game\databases\EntityDatabase.h" />
+    <ClInclude Include="..\..\src\game\databases\StatusEffectDatabase.h" />
+    <ClInclude Include="..\..\src\game\elements\Elements.h" />
+    <ClInclude Include="..\..\src\game\entity\GameEntityFactory.h" />
+    <ClInclude Include="..\..\src\game\events\ActionProcessedEvent.h" />
+    <ClInclude Include="..\..\src\game\events\KOEvent.h" />
+    <ClInclude Include="..\..\src\game\events\LevelChangeEvent.h" />
+    <ClInclude Include="..\..\src\game\events\StatChangeEvent.h" />
+    <ClInclude Include="..\..\src\game\items\ItemComponent.h" />
+    <ClInclude Include="..\..\src\game\utility\Priority.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\engine\audio\AudioSystem.cpp" />
+    <ClCompile Include="..\..\src\engine\cache\TextureCache.cpp" />
+    <ClCompile Include="..\..\src\engine\component\Component.cpp" />
+    <ClCompile Include="..\..\src\engine\configuration\ApplicationConfiguration.cpp" />
+    <ClCompile Include="..\..\src\engine\contentmanager\ContentManager.cpp" />
+    <ClCompile Include="..\..\src\engine\Engine.cpp" />
+    <ClCompile Include="..\..\src\engine\EngineTests.cpp" />
+    <ClCompile Include="..\..\src\engine\entity\Entity.cpp" />
+    <ClCompile Include="..\..\src\engine\entity\EntityFactory.cpp" />
+    <ClCompile Include="..\..\src\engine\events\EventManager.cpp" />
+    <ClCompile Include="..\..\src\engine\events\eventtypes\AudioEvents.cpp" />
+    <ClCompile Include="..\..\src\engine\events\eventtypes\InputActionEvent.cpp" />
+    <ClCompile Include="..\..\src\engine\events\eventtypes\NewAwesomiumScreenEvent.cpp" />
+    <ClCompile Include="..\..\src\engine\events\eventtypes\TimingWindowEvents.cpp" />
+    <ClCompile Include="..\..\src\engine\events\IEvent.cpp" />
+    <ClCompile Include="..\..\src\engine\graphics\awesomium.cpp" />
+    <ClCompile Include="..\..\src\engine\graphics\BigSprite.cpp" />
+    <ClCompile Include="..\..\src\engine\graphics\BigTexture.cpp" />
+    <ClCompile Include="..\..\src\engine\graphics\ParticleSystem.cpp" />
+    <ClCompile Include="..\..\src\engine\graphics\screens\AwesomiumScreen.cpp" />
+    <ClCompile Include="..\..\src\engine\graphics\screens\Screen.cpp" />
+    <ClCompile Include="..\..\src\engine\graphics\screens\ScreenManager.cpp" />
+    <ClCompile Include="..\..\src\engine\graphics\WebTile.cpp" />
+    <ClCompile Include="..\..\src\engine\input\controls\InputModule.cpp" />
+    <ClCompile Include="..\..\src\engine\input\controls\TimedInputController.cpp" />
+    <ClCompile Include="..\..\src\engine\input\files\xml\pugixml.cpp" />
+    <ClCompile Include="..\..\src\engine\log\Log.cpp" />
+    <ClCompile Include="..\..\src\engine\maps\Map.cpp" />
+    <ClCompile Include="..\..\src\engine\maps\MapLayer.cpp" />
+    <ClCompile Include="..\..\src\engine\maps\TileMap.cpp" />
+    <ClCompile Include="..\..\src\engine\maps\TileSet.cpp" />
+    <ClCompile Include="..\..\src\engine\time\CallbackTimer.cpp" />
+    <ClCompile Include="..\..\src\engine\time\StopWatch.cpp" />
+    <ClCompile Include="..\..\src\engine\time\Timer.cpp" />
+    <ClCompile Include="..\..\src\engine\time\TimingWindow.cpp" />
+    <ClCompile Include="..\..\src\engine\utilities\awesomium_method_dispatcher.cpp" />
+    <ClCompile Include="..\..\src\engine\utilities\base64.cpp" />
+    <ClCompile Include="..\..\src\engine\utilities\BoostOverrides.cpp" />
+    <ClCompile Include="..\..\src\engine\utilities\PropertyManager.cpp" />
+    <ClCompile Include="..\..\src\game\actions\Action.cpp" />
+    <ClCompile Include="..\..\src\game\actions\ActionGroup.cpp" />
+    <ClCompile Include="..\..\src\game\actions\Attack.cpp" />
+    <ClCompile Include="..\..\src\game\battle\Mechanics.cpp" />
+    <ClCompile Include="..\..\src\game\character\BaseCharacterComponent.cpp" />
+    <ClCompile Include="..\..\src\game\character\Stats.cpp" />
+    <ClCompile Include="..\..\src\game\components\ActionCostOverride.cpp" />
+    <ClCompile Include="..\..\src\game\components\ActionModifierComponent.cpp" />
+    <ClCompile Include="..\..\src\game\components\BattleCharacterComponent.cpp" />
+    <ClCompile Include="..\..\src\game\components\ComponentCreators.cpp" />
+    <ClCompile Include="..\..\src\game\components\ElementalComponent.cpp" />
+    <ClCompile Include="..\..\src\game\components\MultiActionComponent.cpp" />
+    <ClCompile Include="..\..\src\game\components\StatChangeOnApplyComponent.cpp" />
+    <ClCompile Include="..\..\src\game\components\StatComponent.cpp" />
+    <ClCompile Include="..\..\src\game\components\StatLevelingComponent.cpp" />
+    <ClCompile Include="..\..\src\game\components\StatManagerComponent.cpp" />
+    <ClCompile Include="..\..\src\game\components\StatusEffectComponent.cpp" />
+    <ClCompile Include="..\..\src\game\components\StatusManagerComponent.cpp" />
+    <ClCompile Include="..\..\src\game\components\UseActionComponent.cpp" />
+    <ClCompile Include="..\..\src\game\databases\EntityDatabase.cpp" />
+    <ClCompile Include="..\..\src\game\databases\StatusEffectDatabase.cpp" />
+    <ClCompile Include="..\..\src\game\elements\Elements.cpp" />
+    <ClCompile Include="..\..\src\game\entity\GameEntityFactory.cpp" />
+    <ClCompile Include="..\..\src\game\events\ActionProcessedEvent.cpp" />
+    <ClCompile Include="..\..\src\game\events\KOEvent.cpp" />
+    <ClCompile Include="..\..\src\game\events\StatChangeEvent.cpp" />
+    <ClCompile Include="..\..\src\game\events\StatusEffectAddedEvent.cpp" />
+    <ClCompile Include="..\..\src\game\items\ItemComponent.cpp" />
+    <ClCompile Include="..\..\src\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\resources\html\FontLoads.css" />
+    <None Include="..\..\resources\html\NewGameOptions.html" />
+    <None Include="..\..\resources\html\scriptingfiles\input_module.js" />
+    <None Include="..\..\resources\html\scriptingfiles\jquery-2.2.3.js" />
+    <None Include="..\..\resources\html\scriptingfiles\jquery-ui.css" />
+    <None Include="..\..\resources\html\scriptingfiles\jquery-ui.js" />
+    <None Include="..\..\resources\html\scriptingfiles\jquery-ui.min.css" />
+    <None Include="..\..\resources\html\scriptingfiles\jquery-ui.min.js" />
+    <None Include="..\..\resources\html\scriptingfiles\jquery-ui.structure.css" />
+    <None Include="..\..\resources\html\scriptingfiles\jquery-ui.structure.min.css" />
+    <None Include="..\..\resources\html\scriptingfiles\jquery-ui.theme.css" />
+    <None Include="..\..\resources\html\scriptingfiles\jquery-ui.theme.min.css" />
+    <None Include="..\..\resources\html\Test.html" />
+    <None Include="..\..\resources\html\TitleScreen .html" />
+    <None Include="..\..\resources\html\TitleScreen.css" />
+    <None Include="..\..\resources\html\TitleScreen.html" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

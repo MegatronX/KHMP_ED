@@ -1,0 +1,80 @@
+﻿Build started 2016-05-29 10:57:46 PM.
+     1>Project "D:\KHMP_ED\build\KHMP_ED\KHMP_ED.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl- /Od /Oy- /D DEBUG /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\src\engine\maps\Map.cpp
+         Map.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\KHMP_ED\build\Debug\KHMP_ED.exe" /INCREMENTAL /NOLOGO "sfml-audio-d.lib" "sfml-graphics-d.lib" "sfml-main-d.lib" "sfml-network-d.lib" "sfml-system-d.lib" "sfml-window-d.lib" opengl32.lib glu32.lib fmodex_vc.lib awesomium.lib muparser32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\KHMP_ED\build\Debug\KHMP_ED.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\KHMP_ED\build\Debug\KHMP_ED.lib" /MACHINE:X86 -D_SCL_SECURE_NO_WARNINGS Debug\AudioSystem.obj
+         Debug\TextureCache.obj
+         Debug\Component.obj
+         Debug\ApplicationConfiguration.obj
+         Debug\Engine.obj
+         Debug\EngineTests.obj
+         Debug\Entity.obj
+         Debug\EntityFactory.obj
+         Debug\EventManager.obj
+         Debug\AudioEvents.obj
+         Debug\InputActionEvent.obj
+         Debug\NewAwesomiumScreenEvent.obj
+         Debug\TimingWindowEvents.obj
+         Debug\IEvent.obj
+         Debug\awesomium.obj
+         Debug\BigSprite.obj
+         Debug\BigTexture.obj
+         Debug\ParticleSystem.obj
+         Debug\AwesomiumScreen.obj
+         Debug\Screen.obj
+         Debug\ScreenManager.obj
+         Debug\WebTile.obj
+         Debug\InputModule.obj
+         Debug\TimedInputController.obj
+         Debug\pugixml.obj
+         Debug\Log.obj
+         Debug\Map.obj
+         Debug\MapLayer.obj
+         Debug\TileMap.obj
+         Debug\TileSet.obj
+         Debug\CallbackTimer.obj
+         Debug\StopWatch.obj
+         Debug\Timer.obj
+         Debug\TimingWindow.obj
+         Debug\awesomium_method_dispatcher.obj
+         Debug\base64.obj
+         Debug\BoostOverrides.obj
+         Debug\PropertyManager.obj
+         Debug\Action.obj
+         Debug\ActionGroup.obj
+         Debug\Attack.obj
+         Debug\Mechanics.obj
+         Debug\BaseCharacterComponent.obj
+         Debug\Stats.obj
+         Debug\ActionCostOverride.obj
+         Debug\ActionModifierComponent.obj
+         Debug\BattleCharacterComponent.obj
+         Debug\ComponentCreators.obj
+         Debug\ElementalComponent.obj
+         Debug\MultiActionComponent.obj
+         Debug\StatChangeOnApplyComponent.obj
+         Debug\StatComponent.obj
+         Debug\StatLevelingComponent.obj
+         Debug\StatManagerComponent.obj
+         Debug\StatusEffectComponent.obj
+         Debug\StatusManagerComponent.obj
+         Debug\UseActionComponent.obj
+         Debug\EntityDatabase.obj
+         Debug\StatusEffectDatabase.obj
+         Debug\Elements.obj
+         Debug\GameEntityFactory.obj
+         Debug\ActionProcessedEvent.obj
+         Debug\KOEvent.obj
+         Debug\StatChangeEvent.obj
+         Debug\StatusEffectAddedEvent.obj
+         Debug\ItemComponent.obj
+         Debug\main.obj
+     1>LINK : warning LNK4044: unrecognized option '/D_SCL_SECURE_NO_WARNINGS'; ignored
+         KHMP_ED.vcxproj -> D:\KHMP_ED\build\Debug\KHMP_ED.exe
+     1>Done Building Project "D:\KHMP_ED\build\KHMP_ED\KHMP_ED.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:16.77

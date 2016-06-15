@@ -1,0 +1,219 @@
+<html>
+    <head>
+        <title>Title Screen</title>
+        <link rel="stylesheet" type="text/css" href="TitleScreen.css">
+        <link rel="stylesheet" type="text/css" href="TitleScreen.css">
+        <script type="text/javascript" src="scriptingfiles/input_module.js"></script>
+        <script type="text/javascript" src="scriptingfiles/jquery-2.2.3.js"></script>
+        <script type="text/javascript" src="scriptingfiles/jquery-ui.js"></script>
+    </head>
+   <script>
+       var readyForInput = false;
+       function loadTitleScreenAudio()
+       {
+           Engine.AudioSystem.addSound("Dearly_Beloved_Hikari", "Dearly Beloved");
+           //Engine.AudioSystem.playSound("Dearly Beloved", true);
+           Engine.AudioSystem.addSound("SelectionCancel", "Cancel", true, "", true, ".wav");
+           Engine.AudioSystem.addSound("SelectionConfirm", "Confirm", true, "", true, ".wav");
+           Engine.AudioSystem.addSound("SelectionChange", "Change", true, "", true, ".wav");
+       }
+       function startAnimation()
+       {
+           var jrlogo = $('#JRLogo');
+           jrlogo.fadeIn(1200);
+           jrlogo.delay(600).fadeOut(1200, function () { fadeInspiredBy(); });
+           //jrlogo.fadeIn(2200, function () { jrlogo.fadeOut(1600, function () { fadeInspiredBy(); }); });
+       }
+       function fadeInspiredBy()
+       {
+           var disclaimer = $('#Disclaimer');
+           var insDiv = $('#InspiredBy');
+           var seLogo = $('#SELogo');
+           var disneyLogo = $('#DisneyLogo');
+           var time = 0;
+           disclaimer.fadeIn(1000);
+           disclaimer.delay(1300).fadeOut(1000);
+           time += 3400;
+           insDiv.delay(time).fadeIn(1200);
+           seLogo.delay(time + 400).fadeIn(1200);
+           disneyLogo.delay(time + 800).fadeIn(1200);
+           time += 2100;
+           disneyLogo.delay(600).fadeOut(1800);
+           seLogo.delay(600).fadeOut(1800);
+           insDiv.delay(600).fadeOut(1800, function () { characterMoveIn(time + 2200); });
+           time += 3500;
+
+
+       }
+       function characterMoveIn(time)
+       {
+           time = 600;// = 1000;
+           var arian = $('#Arian');
+           var ceira = $('#Ceira');
+           var slayden = $('#Slayden');
+           
+           slayden.delay(time).animate({ top: "80px", opacity: '0.75' }, 2500, 'swing');
+           arian.delay(time).animate({ top: "120px", opacity: '0.75' }, 2500, 'swing');
+           ceira.delay(time + 1400).fadeIn(2100);
+           time += 5500;
+           slayden.delay(600).animate({ left: "-400px", opacity: '0' }, 2100, 'swing');
+           arian.delay(600).animate({ left: "1400px", opacity: '0' }, 2100, 'swing');
+           ceira.delay(400).fadeOut(800, function () { loadMainMenu(); });
+
+
+           var aoni = $('#Aoni');
+           var signus = $('#Signus');
+           var sidus = $('#Sidus');
+       }
+
+       function loadMainMenu()
+       {
+           var arianceira = $('#ArianCeira');
+           arianceira.delay(0).animate({ opacity: 0.7, left: "506px" }, 1700, 'swing');
+
+           var newgameoption = $('#NewGameOption');
+           var loadgameoption = $('#LoadGameOption');
+           var optionsoption = $('#GameOptionsOption');
+
+           newgameoption.delay(600).animate({left: "100px"}, 900, 'easeOutBack');
+           loadgameoption.delay(600 + 200).animate({left: "150px"}, 900, 'easeOutBack');
+           optionsoption.delay(600 + 400).animate({ left: "200px" }, 900, 'easeOutBack');
+
+           var optionhighlighter = $('#OptionHighlight');
+           optionhighlighter.delay(1500).animate({ opacity: 1.0 }, 100, 'swing');
+
+           
+           var gamelogo = $('#GameLogo');
+           gamelogo.delay(800).animate({ opacity: 1.0 }, 1000, 'swing', function () { readyForInput = true; pulseLogoWords(); } );
+       }
+       function pulseLogoWords() {
+           $('#GameLogoFront').animate({
+               left: "0px",
+               top: "0px"
+           }, 1000);
+           $('#GameLogoFrontImage').animate({
+               height: "210px",
+               width: "325px"
+           }, 1000, function () {
+               $('#GameLogoFront').animate({
+                   left: "-1px",
+                   top: "-2px"
+               }, 1000);
+               // First animate complete
+               $('#GameLogoFrontImage').animate({
+                   height: "212px",
+                   width: "328px"
+               }, 1000, function () {
+                   // Second animate complete
+                   
+                   pulseLogoWords();
+               });
+           });
+       }
+       var mainGameOptionIndex = 0;
+       var inputMode = "MainGameOptions";
+       function handleInput(action, pushed, player, time)
+       {
+           if (readyForInput)
+           {
+               if (inputMode == "MainGameOptions")
+               {
+                   return handleInputMainGameOptions(action, pushed, player, time);
+                
+               }
+           }
+       }
+       function handleInputMainGameOptions(action, pushed, player, time)
+       {
+           var handled = false;
+           if (pushed)
+           {
+               if (action == InputAction.Up || action == InputAction.Down)
+               {
+                   var oldIndex = mainGameOptionIndex;
+                   if (action == InputAction.Up) {
+                       mainGameOptionIndex -= 1;
+                       if (mainGameOptionIndex < 0)
+                           mainGameOptionIndex = 2;
+                   }
+                   else if (action == InputAction.Down) {
+                       mainGameOptionIndex = (mainGameOptionIndex + 1) % 3;
+                   }
+                   switchOptionHighlight(oldIndex, mainGameOptionIndex, 100, true);
+                   handled = true;
+               }
+               else if (action == InputAction.Confirm)
+               {
+                   if (mainGameOptionIndex == 0)
+                   {
+                       Engine.ScreenManager.NewHTMLScreen("KHMP/NewGameOptions.html");
+                   }
+                   else if (mainGameOptionIndex == 1)
+                   {
+                       Engine.ScreenManager.NewHTMLScreen("KHMP/LoadSavedGames.html");
+                   }
+                   else if (mainGameOptionIndex == 2)
+                   {
+                       Engine.ScreenManager.NewHTMLScreen("KHMP/GameOptions.html");
+                   }
+                   Engine.AudioSystem.playSound("Confirm", false);
+               }
+           }
+
+           return handled;
+       }
+       function switchOptionHighlight(srcOption, destOption, time, suspendInputs)
+       {
+           if (suspendInputs)
+               readyForInput = false;
+           var left = "";
+           var top = "";
+           var highlight = $('#OptionHighlight');
+           switch (destOption)
+           {
+               case 0:
+                   highlight.animate({ left: "80px", top: "-1px" }, time, 'swing', function () { readyForInput = true; });
+                   break;
+               case 1:
+                   highlight.animate({ left: "130px", top: "49px" }, time, 'swing', function () { readyForInput = true; });
+                   break;
+               case 2:
+                   highlight.animate({ left: "180px", top: "99px" }, time, 'swing', function () { readyForInput = true; });
+                   break;
+           }
+           Engine.AudioSystem.playSound("Change", false);
+       }
+
+       function loadPage()
+       {
+           loadTitleScreenAudio();
+           Engine.AudioSystem.playSound("Dearly Beloved", true);
+           startAnimation();
+       }
+   </script>
+   <body onload="loadPage()" style="background-color:white">
+     <div id="GameLogo" class="GameLogo">
+         <div id="GameLogoBack" class="GameLogoBack"><img id="GameLogoBackImage" src="testimages/LogoBackSmall.png" class="GameLogoBackImage" /></div>
+         <div id="GameLogoFront" class="GameLogoFront"><img id="GameLogoFrontImage" src="testimages/LogoWordsSmall.png" class="GameLogoFrontImage" /></div>
+     </div>
+     <div id="ArianCeira" class="ArianCeira"><img src="testimages/ArianCeira.png" class="ArianCeiraImage"/></div>
+     <div id="Disclaimer" class="Disclaimer"><img src="testimages/Disclaimer.png" /></div>
+     <div id="Ceira" class="Ceira"><img src="testimages/Ceira.png" class="CeiraImage"/></div>
+     <div id="Aoni" class="Aoni"><img src="testimages/Aoni.png" /></div>
+     <div id="Arian" class="Arian"><img src="testimages/Arian.png" class="ArianImage"/></div>
+     <div id="Slayden" class="Slayden"><img src="testimages/slayden.png" class="SlaydenImage"/></div>
+     <div id="DisneyLogo" class="DisneyLogo"><img src="testimages/DisneyLogo.png" class="DisneyImage"/></div>
+     <div id="JRLogo" class="JRLogo"><img src="testimages/Logo.png" /></div>
+     <div id="SELogo" class="SELogo"><img src="testimages/SquareEnixLogo.png" /></div>
+     <div id="InspiredBy" class="IBLogo"><img src="testimages/InspiredBy.png" /></div>
+
+     <!--Main Menu Options-->
+     
+     <div id="MainGameOptions" class="MainGameOptions">
+         <div id="OptionHighlight" class="MainGameOptionHighlight"><div id="OptionHighlightButton" class="HighlightButton"></div></div>
+         <div id="NewGameOption" class="NewGameOption"><div id="NewGameOptionText" class="GameOptionText">New Game</div></div>
+         <div id="LoadGameOption" class="LoadGameOption"><div id="LoadGameOptionText" class="GameOptionText">Load Game</div></div>
+         <div id="GameOptionsOption" class="OptionsGameOption"><div id="OptionsGameOptionText" class="GameOptionText">Game Options</div></div>
+     </div>
+   </body>
+</html>
